@@ -45,7 +45,6 @@
     height: 40px;
     font-size: 12px;
     margin-top:10px;
-    text-align: left
 }
 .slot{
     margin: 0;

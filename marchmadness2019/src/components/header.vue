@@ -57,7 +57,7 @@
   table.gridtable th {
     background-color: #b3d4ef;
     padding: 8px;
-    width: 69.4px;
+    width: 97px;
     border: 1px solid #fff;
   }
   table.gridtable td {
