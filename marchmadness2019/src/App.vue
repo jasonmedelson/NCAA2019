@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <div class="btn-group w-100" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-info" @click="simRound">Simulate Round</button>
+      <button type="button" class="btn btn-info" @click="simTournament">Simulate Tournament</button>
+      <button type="button" class="btn btn-info" @click="resetTournament">Reset</button>
+    </div>
     <appBaseHeader></appBaseHeader>
     <appBracket></appBracket>
     
@@ -28,7 +33,16 @@ export default {
       else{
         this.header = "";
       }
-      
+    },
+    simRound: function(){
+      console.log("call child")
+      this.$children[1].revealRound()
+    },
+    simTournament:function(){
+      this.$children[1].revealAll()
+    },
+    resetTournament:function(){
+      this.$children[1].reset()
     }
   },
   components: {
